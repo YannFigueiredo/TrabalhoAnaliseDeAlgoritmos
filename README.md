@@ -1,4 +1,4 @@
-# Trabalho Análise de Algoritmos
+# Trabalho de Análise de Algoritmos - Algoritmos de Ordenação
 
 <i>Grupo:
 

@@ -2,7 +2,7 @@
 
 Grupo
 
-Yann Figueiredo
-Fabio de Souza
-Fabricio dde Souza
-Lenilson Santos
+<\n>Yann Figueiredo
+<\n>Fabio de Souza
+<\n>Fabricio dde Souza
+<\n>Lenilson Santos

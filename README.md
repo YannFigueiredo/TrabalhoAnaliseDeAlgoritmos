@@ -1,8 +1,8 @@
 # Trabalho Análise de Algoritmos
 
-Grupo
+<i>Grupo<br/>
 
-<\n>Yann Figueiredo
-<\n>Fabio de Souza
-<\n>Fabricio dde Souza
-<\n>Lenilson Santos
+<br/>Yann Figueiredo
+<br/>Fabio de Souza
+<br/>Fabricio dde Souza
+<br/>Lenilson Santos</i>

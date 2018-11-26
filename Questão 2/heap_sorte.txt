@@ -1,0 +1,82 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import time
+import timeit
+import math
+def heapify(arr, n, i): 
+    largest = i 
+    l = 2 * i + 1     
+    r = 2 * i + 2     
+  
+    if l < n and arr[i] < arr[l]: 
+        largest = l 
+  
+    if r < n and arr[largest] < arr[r]: 
+        largest = r 
+  
+
+    if largest != i: 
+        arr[i],arr[largest] = arr[largest],arr[i] # swap 
+  
+        heapify(arr, n, largest) 
+  
+def heapSort(arr): 
+    n = len(arr) 
+    # maxheap. 
+    for i in range(n, -1, -1): 
+        heapify(arr, n, i) 
+  
+    for i in range(n-1, 0, -1): 
+        arr[i], arr[0] = arr[0], arr[i] # swap 
+        heapify(arr, i, 0)
+        
+        
+
+def gera_valor_aleatorio(n):
+    arr=(np.random.randint(0,1000,size=n))
+    return  (arr)
+def gera_valor_ordenado(n):
+    return(np.arange(n))
+def gera_valor_ordenado_descrecente(n):
+    return(np.arange(n,0,-1))
+
+arr=[]
+arr1=[]
+arr2=[]
+tempo=[]
+tempo1=[]
+tempo2=[]
+
+'''for n in range(1000):
+    vet=gera_valor_aleatorio(n)
+    inicio = timeit.default_timer()
+    heapSort(vet)
+    arr.append(vet)
+    fim = timeit.default_timer()
+    tempo.append(fim-inicio)
+    
+for n in range(1000):
+    vet1=gera_valor_ordenado(n)
+    inicio1 = timeit.default_timer()
+    heapSort(vet1)
+    arr1.append(vet1)
+    fim1 = timeit.default_timer()
+    tempo1.append(fim1-inicio1)'''
+for n in range(1000):
+    vet2=gera_valor_ordenado_descrecente(n)
+    print(vet2)
+    inicio2 = timeit.default_timer()
+    heapSort(vet2)
+    arr2.append(vet2)
+    fim2 = timeit.default_timer()
+    tempo2.append(fim2-inicio2)
+
+x=np.arange(1000)
+#plt.plot(x,tempo)
+#plt.plot(x,tempo1)
+plt.plot(x,tempo2)
+
+plt.show()
+
+
+

@@ -1,0 +1,3 @@
+Resposta - Questão 04
+
+Analisando o tempo de execução dos algoritmos, nota-se que o algoritmo Counting sort é mais eficiente do que o Quicksort. Isso é comprovado pelo fato do counting ter complexidade linear, enquanto que o Quicksort tem complexidade  nlog(n). Porém, em situações reais de uso, onde processamento e, principalmente, memória são limitados, o algoritmo Quicksort se dispõe mais eficiente pois não precisa de memória auxiliar, enquanto que o Counting sort necessita de um vetor auxiliar. Ou seja, vetores grandes requerem quantidades maiores de memória para o processamento do algoritmo counting sort. Portanto, o algoritmo quicksort é mais eficiente.
